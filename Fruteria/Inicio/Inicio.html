@@ -1,0 +1,131 @@
+<!DOCTYPE html> 
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
+        <script src="../JavaScript/javascript.js"></script>
+        <title>Fruteria4</title>
+
+    </head>
+
+    <body> 
+        <h1>Tienda de Frutas</h1>
+
+        <section id="contenedor">
+            <h2>Pera</h2>
+            <img src="../Imagenes/pera.jpg" id="imegenes" onclick="compra('Pera')">
+        
+        </section>
+        <br></br>
+
+        <section id="contenedor">
+            <h2>Manzana</h2>
+            <img src="../Imagenes/manzana.png" id="imegenes"onclick="compra('Manzana')">
+            
+        </section>
+        <br></br>
+
+        <section id="contenedor">
+            <h2>Uva</h2>
+            <img src="../Imagenes/uva.jpg" id="imegenes" onclick="compra('Uva')">
+            
+        </section>
+        <br></br>
+
+        <section id="contenedor">
+            <h2>Melocotón</h2>
+            <img src="../Imagenes/melocoton.jpg" id="imegenes" onclick="compra('Melocotón')">
+            
+        </section>
+        <br></br>
+
+        <section id="contenedor">
+            <h2>Sandia</h2>
+            <img src="../Imagenes/sandia.jpg" id="imegenes" onclick="compra('Sandia')">
+            
+        </section>
+        <br></br>
+
+        <section id="contenedor">
+            <h2>Melón</h2>
+            <img src="../Imagenes/melon.jpg" id="imegenes" onclick="compra('Melón')">
+            
+        </section>
+        <br></br>
+
+        <section id="contenedor">
+            <h2>Platanos</h2>
+            <img src="../Imagenes/platanos.jpg" id="imegenes" onclick="compra('Platanos')">
+            
+        </section>
+        <br></br>
+
+        <section id="contenedor">
+            <h2>Kiwi</h2>
+            <img src="../Imagenes/kiwi.jpg" id="imegenes" onclick="compra('Kiwi')">
+            
+        </section>
+        <br></br>
+
+        <section id="contenedor">
+            <h2>Fresa</h2>
+            <img src="../Imagenes/fresa.jpeg" id="imegenes" onclick="compra('Fresa')">
+            
+        </section>
+        <br></br>
+
+        <section id="contenedor">
+            <h2>Naranja</h2>
+            <img src="../Imagenes/naranja.jpg" id="imegenes" onclick="compra('Naranja')">
+            
+        </section>
+        <br></br>
+
+        <form action="ejemplo.php" method="get" id="contenedorF">
+            <p>Nombre: <input type="text" name="nombre" minlength="3" maxlength="15"></p>
+            <p>1ª Apellido: <input type="text" name="pApellido" maxlength="40"></p>
+            <p>2º Apellido: <input type="text" name="sApellido" maxlength="40"></p>
+            <p>E-mail:<input type="email" name="direccionemail" placeholder=" usuario@servidor.com"></p>
+            <p>Pago:
+                <input type="radio" name="pg" value="Tarjeta"> Tarjeta
+                <input type="radio" name="pg" value="Contrareembolso"> Contrareembolso
+            </p>
+            <p>Tarjeta de Cliente:
+                <input type="radio" name="tc" value="si"> Si
+                <input type="radio" name="tc" value="no"> No
+                <br></br>
+                <p>
+                    <input type="text" name="codigoCliente1" minlength="3" maxlength="3" required pattern="[A-Za-z]" placeholder="AAA"></p>
+                    <input type="text" name="codigoCliente2" minlength="4" maxlength="4" required pattern="{0,9}" placeholder="1234"></p>
+                    <input type="text" name="codigoCliente3" minlength="1" maxlength="1" required pattern="{ /_.#&}" placeholder="#"></p>
+                </p>
+            </p>
+
+            <button id="buton1" onclick="limpiarFormulario()">Limpiar Formulario</button>
+             <p><button id="buton2" onclick="realizarPedido()" type="submit">Realizar Pedido</button></p>
+           
+        </form>
+
+        <br></br>
+        <br></br>
+
+        <footer id="Contactanos">
+            <div>
+                <h3>Contactanos</h3>
+                <ul>
+                    <li><b>Tlfn: </b> 555 012 225 </li>
+                    <li><b>Fax:  </b> 555 225 012 </li>
+                    <li><b>Oficinas:</b> 742 Evergreen Terrace</li>
+                </ul>
+            </div>
+
+        </footer>
+        
+        
+    </body>
+
+
+</html>
