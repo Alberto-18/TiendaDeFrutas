@@ -1,4 +1,3 @@
-//  -----------------------------------------------------------------------------------------------------------------------------------
 var cantidadFruta = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 var precioTotal = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
@@ -235,6 +234,61 @@ function enviarDatos() {
 
 
 //Formulario ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+window.onload = () => {
+    form = document.getElementById("contenedorF");
+
+    nombre = document.getElementById("nombre");
+    nombreError = document.getElementById("errorNombre");
+
+    papellidos = document.getElementById("pApellido");
+    papellidosError = document.getElementById("errorPApellido");
+
+    sapellidos = document.getElementById("sApellido");
+    sapellidosError = document.getElementById("errorSApellido");
+
+    direccion = document.getElementById("direccion");
+    direccionError = document.getElementById("errorDireccion");
+
+    email = document.getElementById("direccionemail");
+    emailError = document.getElementById("errorDireccionemail");
+
+    form.addEventListener("submit", (event) => {
+        todoCorrecto = true;
+        errorNombre.textContent = nombre.validationMessage;
+        if (!nombre.validity.valid) {
+            todoCorrecto = false;
+            event.preventDefault();
+        }
+        
+        if (!pApellido.validity.valid) {
+            todoCorrecto = false;
+            event.preventDefault();
+        }
+        
+        if (!sApellido.validity.valid) {
+            todoCorrecto = false;
+            event.preventDefault();
+        }
+        
+        if (!direccion.validity.valid) {
+            todoCorrecto = false;
+            event.preventDefault();
+        }
+        
+        if (!direccionemail.validity.valid) {
+            todoCorrecto = false;
+            event.preventDefault();
+        }
+
+
+        if (todoCorrecto) {
+            ventanilla = window.open("./Inicio/VentanaEmergente.html", "pop-up", "width=500px height=500px");
+            event.preventDefault();
+        }
+
+    });
+
+};
 
 function realizarPedido() {
     
