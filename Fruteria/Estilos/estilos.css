@@ -1,17 +1,96 @@
+h1{
+    text-align: center;
+    
+}
+
 /* Frutas-------------------------------------------------------------------------------------------------------------------------*/
 #imegenes{
-    width: 300px;
-    height: 250px;
+    width: 100px;
+    height: 75px;
    
 }
 
-#contenedor{
+div{
     border-radius: 0px 33px 0px 33px;
     -moz-border-radius: 0px 33px 0px 33px;
     -webkit-border-radius: 0px 33px 0px 33px;
     border: 2px solid #000000;
     background-color: #E4F896;
     text-align: center;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+
+}
+
+#Pera {
+    margin-left: 3%;
+    margin-top: 2%;
+
+}
+
+#Manzana {
+    margin-left: 15%;
+    margin-top: 2%;
+
+}
+
+#Uva {
+    margin-left: 27%;
+    margin-top: 2%;
+
+}
+
+#Melocotón {
+    margin-left: 39%;
+    margin-top: 2%;
+
+}
+
+#Sandia {
+    margin-left: 51%;
+    margin-top: 2%;
+
+}
+
+
+
+#Melón{
+    margin-left: 3%;
+    margin-top: 10%;
+
+}
+
+#Platanos{
+    margin-left: 15%;
+    margin-top: 10%;
+
+}
+
+#Kiwi {
+    margin-left: 27%;
+    margin-top: 10%;
+}
+
+#Fresa{
+    margin-left: 39%;
+    margin-top: 10%;
+}
+
+#Naranja {
+    margin-left: 51%;
+    margin-top: 10%;
+}
+
+/* Cesta -------------------------------------------------------------------------------------------------------------------------*/
+#cesta{
+    position: absolute;
+    margin-left: 72%;
+    width: 17%;
+    height: 55%;
+    overflow: auto;
+    margin-top: -7%;
+
 }
 
 /* Formulario-------------------------------------------------------------------------------------------------------------------------*/
@@ -31,12 +110,15 @@ background-image: linear-gradient(pink, red);
 /* Forma formulario ---------------------------------------------------------------------------------------------*/
 
 #contenedorF{
+    width: 500px;
     border-radius: 0px 33px 0px 33px;
     -moz-border-radius: 0px 33px 0px 33px;
     -webkit-border-radius: 0px 33px 0px 33px;
     border: 2px solid #000000;
     background-color: #E4F896;
     text-align: center;
+    margin-top: 26%;
+    margin-left: 25%;
     
 }
 
