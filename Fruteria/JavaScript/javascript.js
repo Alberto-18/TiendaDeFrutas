@@ -40,10 +40,6 @@ class FrutaVerano extends Fruta{
         this.region = region;
 
     }
-    getProximidad(){
-        return this.proximidad;
-
-    }
 
 }
 
@@ -51,10 +47,6 @@ class FrutaInvierno extends Fruta{
     constructor(kilos, precio, nombre, region){
         super(kilos, precio, nombre);
         this.region = region;
-
-    }
-    getProximidad(){
-        return this.proximidad;
 
     }
 
